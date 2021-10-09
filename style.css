@@ -1,0 +1,14 @@
+#button-grid {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+.span-horizontal {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.span-vertical {
+    grid-row: span 2;
+}
