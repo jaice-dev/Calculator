@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Calculator</title>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -17,8 +18,8 @@
                 </div>
                 <div id="screen-border">
                     <div id="screen">
-                        <div class="screen-last" id="previous-operation">2 +</div>
-                        <div class= "screen-current" id="current-operation">101</div>
+                        <div data-previous-operand class="screen-last" id="previous-operation">1213</div>
+                        <div data-current-operand class= "screen-current" id="current-operation">2321</div>
                     </div>
                 </div>
                 <div id="button-grid">
