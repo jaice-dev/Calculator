@@ -7,34 +7,42 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="calculator">
-        <div id="top">
-            <div id="brand">CASIO</div>
-            <div id="solar"></div>
+    <main class="main">
+        <div id="calculator-shadow">
+            <div id="calculator">
+                <div id="top">
+                    <div id="brand">CASIO</div>
+                    <div id="solar"></div>
+                </div>
+                <div id="screen-border">
+                    <div id="screen">
+                        <div id="previous-operation">1989301</div>
+                        <div id="current-operation">3920902</div>
+                    </div>
+                </div>
+                <div id="button-grid">
+                    <button class="btn btn-red" id="clearBtn">C</button>
+                    <button class="btn btn-blue" id="delBtn">D</button>
+                    <button class="btn btn-dark-grey" data-operator>÷</button>
+                    <button class="btn btn-dark-grey" data-operator>x</button>
+                    <button class="btn btn-light-grey" data-number>7</button>
+                    <button class="btn btn-light-grey" data-number>8</button>
+                    <button class="btn btn-light-grey" data-number>9</button>
+                    <button class="btn btn-dark-grey" data-operator>-</button>
+                    <button class="btn btn-light-grey" data-number>4</button>
+                    <button class="btn btn-light-grey" data-number>5</button>
+                    <button class="btn btn-light-grey" data-number>6</button>
+                    <button class="btn btn-dark-grey" data-operator>+</button>
+                    <button class="btn btn-light-grey" data-number>1</button>
+                    <button class="btn btn-light-grey" data-number>2</button>
+                    <button class="btn btn-light-grey" data-number>3</button>
+                    <button class="btn btn-dark-grey span-vertical" id="equalsBtn">=</button>
+                    <button class="btn btn-light-grey span-horizontal" data-number>0</button>
+                    <button class="btn btn-dark-grey" id="pointBtn">.</button>
+                </div>
+            </div>
         </div>
-        <div id="screen"></div>
-        <div id="button-grid">
-            <button class="btn btn-red" id="clearBtn">C</button>
-            <button class="btn btn-blue" id="delBtn">D</button>
-            <button class="btn btn-dark-grey" data-operator>÷</button>
-            <button class="btn btn-dark-grey" data-operator>x</button>
-            <button class="btn btn-light-grey" data-number>7</button>
-            <button class="btn btn-light-grey" data-number>8</button>
-            <button class="btn btn-light-grey" data-number>9</button>
-            <button class="btn btn-dark-grey" data-operator>-</button>
-            <button class="btn btn-light-grey" data-number>4</button>
-            <button class="btn btn-light-grey" data-number>5</button>
-            <button class="btn btn-light-grey" data-number>6</button>
-            <button class="btn btn-dark-grey" data-operator>+</button>
-            <button class="btn btn-light-grey" data-number>1</button>
-            <button class="btn btn-light-grey" data-number>2</button>
-            <button class="btn btn-light-grey" data-number>3</button>
-            <button class="btn btn-dark-grey span-vertical" id="equalsBtn">=</button>
-            <button class="btn btn-light-grey span-horizontal" data-number>0</button>
-            <button class="btn btn-dark-grey" id="pointBtn">.</button>
-        </div>
-    </div>
-
+    </main>
     <footer class="footer">
         <p>Copyright © 2021 jaice-dev</p>
         <a href="https://github.com/jaice-dev" target="_blank">
