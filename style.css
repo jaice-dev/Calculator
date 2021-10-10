@@ -8,6 +8,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 90vh;
 }
 
 #calculator-shadow {
@@ -16,7 +17,6 @@ body {
     border-color: black;
     border-style: solid;
     background-color: darkslategray;
-    margin-top: 100px;
     border-radius: 10px;
 }
 
@@ -101,7 +101,15 @@ body {
 }
 
 footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
     display: flex;
+    align-items: center;
     justify-content: center;
-    padding-top: 20px;
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+
 }
