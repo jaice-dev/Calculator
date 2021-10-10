@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
+
+/* TODO footer not pass into calc */
+/* TODO make buttons 3d ish */
+/* TODO add lines to solar panel */
 
 body {
     background-color: pink;
@@ -16,7 +21,7 @@ body {
     height: 510px;
     border-color: black;
     border-style: solid;
-    background-color: darkslategray;
+    background-color: #5c6969;
     border-radius: 10px;
 }
 
@@ -57,7 +62,7 @@ body {
 
 #screen-border {
     width: 260px;
-    height: 100px;
+    height: 110px;
     background-color: lightslategray;
     border-radius: 10px;
     border-style: solid;
@@ -65,13 +70,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 50px;
-
 }
 
 #screen {
     width: 230px;
-    height: 80px;
+    height: 90px;
     background-color: greenyellow;
     border-radius: 10px;
     display: flex;
@@ -80,24 +83,94 @@ body {
     justify-content: space-around;
     border-color: black;
     border-style: solid;
+    text-align: right;
+    word-break: break-all;
+    word-wrap: break-word;
+    padding-right: 10px;
+}
+
+#previous-operation {
+    font-size: 15px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+
+#current-operation {
+    font-size: 30px;
+    font-family: 'Orbitron', sans-serif;
 }
 
 #button-grid {
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 20% 20% 20% 20% 20%;
-    padding-bottom: 100px;
-    gap: 10px;
-    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    padding-bottom: 10px;
+}
+
+.btn {
+    font-family: 'Teko', sans-serif;
+    font-size: 30px;
+    border-radius: 5px;
+    border-color: black;
+    border-style: solid;
+    width: 55px;
+    height: 45px;
+    background-color: #a9a8a8;
+}
+
+.btn:hover {
+    background-color: #949393;
+}
+
+.btn:active {
+    background-color: #818080;
+}
+
+.btn-red {
+    background-color: rgba(255, 0, 144, 0.65);
+}
+
+.btn-red:hover {
+    background-color: rgba(190, 2, 107, 0.65);
+}
+
+.btn-red:active {
+    background-color: rgba(119, 1, 67, 0.65);
+}
+
+
+.btn-blue {
+    background-color: #71e0f3;
+}
+
+.btn-blue:hover {
+    background-color: #61c3d3;
+}
+
+.btn-blue:active {
+    background-color: #4b95a4;
+}
+
+.btn-dark-grey {
+    background-color: dimgrey;
+}
+
+.btn-dark-grey:hover {
+    background-color: #4f4f4f;
+}
+
+.btn-dark-grey:active {
+    background-color: #3d3d3d;
 }
 
 .span-horizontal {
-    grid-column-start: 1;
-    grid-column-end: 3;
+    width: 120px;
+    grid-column: span 2;
 }
 
 .span-vertical {
     grid-row: span 2;
+    height: 100px;
 }
 
 footer {
